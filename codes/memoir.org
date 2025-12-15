@@ -1,0 +1,84 @@
+# _*_ coding:utf-8 _*_
+#+TITLE: 回忆录
+#+STARTUP: indent
+#+author: xuqian
+#+TAGS:  考试(e) { 教师资格证(t) 公务员考试(s) 事业单位考试(i) 研究生考试(g) } { 曲阜(q) 济宁(H) 郓城(R) 济南(A) } 自我反思(r) 习近平(x)
+# 公务员 servant
+# 事业单位 institutions
+# 研究生 graduate
+# 下列已添加到 init.el 文件
+# #+SEQ_TODO: PENDING(p!) TODO(t!) | DONE(d!) ABORT(a@/!)
+# 丙子年 戊戌月 癸卯日 庚申时 16:40
+
+# C-c C-e 导出
+
+* Prefix
+# 大纲缩进显示
+
+# 导出html设置格式 黄底
+#+BEGIN_EXPORT html
+<style>
+blockquote {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FFF8DC;
+    border-left: 2px solid #ffeb8e;
+    border-left-color: rgb(255, 228, 102);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+</style>
+#+END_EXPORT
+
+
+* 人物志
+
+** 刘健
+
+初一、初二数学教师。
+
+初一，第一次期中考试数学满分。他私下与我谈话，考前就预计考满分的人中有你。
+
+初三，与其路遇，闲聊。他说，教你时，我就预计你之后会成绩下滑。吾不爽，奋发图强，最终以年级第一的成绩结束了初中生涯。
+
+
+* 时间线
+
+** 孩提时代
+
+** 茶庄小学
+
+** 韶华中学
+
+*** 初二
+
+**** 奶奶去世
+
+** 第一中学
+
+** 深圳大学
+
+** 海纳ABS
+
+
+** 待业青年
+
+*** 手术
+
+
+** 事业单位
+
+*** 实习
+
+**** 爷爷去世
+
+*** 助力统计员
+
+**** 车祸
+
+**** 王其峰右迁财政局
+
+* Footnotes

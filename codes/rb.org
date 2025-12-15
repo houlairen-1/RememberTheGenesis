@@ -1,0 +1,696 @@
+# -*- coding:utf-8 _*_
+#+TITLE: Git's org-mode Reading book
+# 大纲缩进显示
+#+STARTUP: indent
+#+author: xuqian
+##+LATEX_COMPILER: xelatex
+#+TAGS: { 动漫(a) 小说(n) } 少女(g) 贵妇(l) { 追更(i) 养肥(s) 完结(c) }
+#+SEQ_TODO: PENDING(p!) TODO(t!) | DONE(d!) ABORT(a@/!)
+# 丙子年 戊戌月 癸卯日 庚申时 16:40
+
+* Prefix
+
+** Quote
+
+# 导出html设置格式 黄底
+#+BEGIN_EXPORT html
+<style>
+blockquote {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FFF8DC;
+    border-left: 2px solid #ffeb8e;
+    border-left-color: rgb(255, 228, 102);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+</style>
+#+END_EXPORT
+
+** Images
+# 控制图片大小
+#+BEGIN_EXPORT html
+<script lang="javascript">
+window.onload = function () {
+  var imgs = document.getElementsByClassName("sized-image"); 
+  for (i = 0; i < imgs.length; i++) {
+    var imgObj = imgs[i] 
+    imgObj.height = imgObj.naturalHeight > 400 ? 400 : imgObj.naturalHeight; 
+    //imgObj.width = imgObj.naturalWidth > 500 ? 500 : imgObj.naturalWidth;
+  }
+}
+</script>
+#+END_EXPORT
+# refer to: https://emacs-china.org/t/macro/7731/9
+# 宏
+#+macro: sized-image @@html:<img class="sized-image" src="$1" alt="$2" />@@
+
+
+* 牡丹亭
++ 作者
+  汤显祖
+** 游园 - 皂罗袍
+#+begin_quote
+原来姹紫嫣红开遍，
+
+似这般都付与断井颓垣。
+
+良辰美景奈何天，
+
+赏心乐事谁家院！
+
+朝飞暮卷，
+
+云霞翠轩；
+
+雨丝风片，
+
+烟波画船
+
+——
+
+锦屏人忒看的这韶光贱！
+#+end_quote
+
+
+* 侠岚                                                                 :动漫:
+
+侠岚之名，意味着守护。 ~我以我血荐轩辕~[fn:3]
+
+#+begin_quote
+光芒总会黯淡，星辰也终将陨落，但是，黯淡的光芒后面，定会出现更夺目的星光。
+
+—— 相离
+#+end_quote
+
+#+begin_quote
+放开过去，握住未来。
+—— 仲长
+#+end_quote
+
+#+begin_quote
+一直以来，他想要牺牲的就是他自己。 （破阵统领）
+#+end_quote
+
+** 加勉
+
++ 辗迟的初心是墨夷。
+
+  1. 第一，辗迟对墨夷的感情定参杂着爱情。首先是前提满足，他们是青梅竹马，非亲姐弟，为什么不可以在一起？其次是程序正当，难道辗迟煞费苦心地营救墨夷、屡败屡战，仅仅是因为可歌可泣且并不存在（虚假，因为非亲姐弟）的姐弟血缘吗？最后，也是最重要的一点，难道官方认为，辗迟与墨夷的干姐弟关系大得过辣妈与墨夷的亲生母女血缘关系吗？辣妈无奈之下都放弃了墨夷，仅仅是为了一个捡到的孩子——辗迟，可是辗迟却因为干姐弟关系而去营救墨夷？逻辑上不对吧！难道辗迟的姐弟血缘就比母女血缘强吗？我是不相信：辗迟的初心里面没有一丝一毫的爱情。
+     
+  2. 第二，初心易得，始终难守。只是践行初心的过程中，辗迟的初心变味了、变质了、变色了。为什么这么说呢？为了营救墨夷而变强，为了变强而踏上玖宫岭，可惜却感人的事，找回姐姐的途中屡战屡败，在人生的低谷，辗迟遇到了救姐途中的白月光——辰月。辰月，家世好，背景深，爷爷是玖宫岭烈士，父亲身居高位，自己又肤白貌美、武艺精湛，作为队友能打且辅助，作为女朋友能睡得下去。所以，看到弹幕里一片辰月是完美老婆的评论，对于“墨夷”那是只字未提的时候，我的心中是不平的，谈不上愤懑。不平的是，一方面，这不是简简单单的“青梅不敌天降”动漫定律，因为就像第一点说的那样，辗迟是对青梅——墨夷有爱情的，在这种情况下，“变心”说明了喜新厌旧、良禽择木的心理；另一方面，一个连自己姐姐都不能守护的人，妄言守护玖宫岭，甚至是天下。这是以要守护玖宫岭为己任来掩饰自己不能守护姐姐的事实吗？这种人是比真小人更加可恨的 *伪君子* 。
+
+  3. 第三，侠岚之名，意味着守护。谈及守护，我比较欣赏天使的守护。她们宣誓 ~“我愿成为他的守护天使，爱他所爱，思他所思，为他承担伤痛，渡过苦难 。无论贫寒或富贵，无论卑贱或高贵；无论身处乱世，或神所不顾。我将为他拔剑而战，为他收起翅膀。不离不弃，直至永远！”~ 从大爱与小爱两方面比较《侠岚》与《雄兵连》：
+
+     1) 小爱。天使的守护从其誓言以及所行中得到彰显。而《侠岚》里面，前有山鬼谣为了成为一名合格的卧底，血虐云丹；后有辗迟移情别恋辰月。很有意思的是，为了收视率，加入了狗血琼瑶剧情。譬如，著名的五角星恋情：
+
+        #+begin_src mermaid :file ./assets/mermaid/circle_侠岚.svg
+        flowchart LR
+        ybd[游不动] --> |喜欢|碧婷 --> |喜欢|千钧 --> |喜欢|辰月 <==喜欢==> 辗迟 -.喜欢.-> 墨夷
+        #+end_src
+
+        #+RESULTS:
+        [[file:./assets/mermaid/circle_侠岚.svg]]
+
+        简直是为了收视率，无所不用其极。这是一点。另一点是，辗迟的守护是虚假的，这已经在第二点中谈及。
+
+     2) 大爱。天使也是有大爱的。她们爱着女王，她们怜悯弱者、落后文明。当面临大爱与小爱之间的冲突时，她们也会放弃小爱，但是她们却不曾玷污小爱的纯洁性——小爱只能守护一人呀！这种小爱是纯粹的。可是，在辗迟身上，无论如何，我都没有看到纯粹的小爱。辗迟明着宣称守护墨夷，却和辰月恋爱。简直侮辱了小爱的纯洁性。
+
+  诚然，我真心佩服侠岚们，前仆后继，共赴国难。但是，我不喜欢辗迟，甚至侧目。因为他的姐姐——墨夷一直在受苦受难，他和辰月的关系突飞猛进；因为他变强的初心不再纯粹，他最终也在爱情上放弃了墨夷；因为官方将墨夷送人了。 +题外话，在故事框架和送姐妹方面，《鬼灭之刃》颇有《侠岚》风骨。+
+  
+* ABORT 果宝特攻
+- State "ABORT"      from              [2022-06-01 三 20:44] \\
+  突然发现小儿科了。可以怀念，不可浪费大量时间。
+- State "PENDING"    from              [2022-05-10 二 20:53]
+** Fruit
+*** 橙留香 〔橙子〕
+*** 菠萝吹雪 〔菠萝〕
+*** 陆小果 〔苹果〕
+*** 疯清扬 〔椰子〕
+- 当人们失去危机感的时候...[fn:1]
+- 事物的表面现象[fn:2]
+*** 小果叮 〔甘蔗〕
+** 加勉
+
+# 生于忧患，死于安乐。
+
+* ABORT 呢喃诗章                                                  :小说:养肥:
+- State "ABORT"      from              [2022-05-10 二 20:54] \\
+  乏味，进展缓慢。无聊的时候再看吧！
++ 夏德·苏伦·汉密尔顿
+  - Shade.Suellen.Hamilton
+
+* ABORT 我已经厌倦了，分手吧                                      :小说:少女:
+- State "ABORT"      from              [2022-06-01 三 20:43] \\
+  没空，没耐心再读下去了。适用“鳄鱼法则”。
+- State "PENDING"    from "TODO"       [2022-05-10 二 20:53]
++ 雪之下阳乃
+  - 19 她的笑
+    雪之下阳乃盯着藤原止看了半晌，忽然抬起右手，掩住了唇。
+    
+    明明没人看见她勾起的嘴角，却没有任何人怀疑她正在笑，因为那一瞬间，女孩的眉梢眼角一齐明媚了起来，就好像旭日跃过雪山，白雪反照晨曦，明艳得不可方物。
++ 三岛学姐
++ 平冢静
++ 初恋
+  一个金发的打伞的大姐姐，家里养着两只宠物，笑起来很甜。
+
+  
+* DONE 美女来袭                                                   :小说:少女:
+
+- State "Done"       from "ABORT"      [2022-05-10 二 20:55]
+- State "ABORT"      from              [2022-05-10 二 20:55]
+#+begin_src dot :file ./assets/dot/rs_武异_美女来袭.svg :cmdline -Tsvg
+  graph beautyStruck{
+      # 定义全局属性
+      rankdir = TD;
+      dpi = 64;
+      #size="10,8";
+      #page=11;
+      ratio=fill;
+      #ranksep=0.5;
+      #lwidth=0.5;
+
+      node [fontname="Simsun", shape="ellipse", color="red"];
+      {
+      cs [label="成霜"];
+      dqy [label="黛沁雅"];
+      hqm [label="韩秋茗"];
+      lsy [label="蓝素玥"];
+      mxy [label="慕小雅"];
+      nyy [label="宁雨夷"];
+      qbe [label="秦蓓儿"];
+      wls [label="维丽丝"];
+      xcy [label="许彩月"];
+      xf [label="筱芬"];
+      xq [label="许芊"];
+      xx [label="旬香"];
+      xy [label="夕悦"];
+      zy [label="周云"];
+      }
+
+      # 定级赛
+      {
+          node [shape=plaintext; fontsize=24, style=filled, fillcolor=white ];
+          美人榜 -- 0 [ style=invis; ];
+          #edge [arrowhead=tee;];
+          0 -- 1 -- 2 -- 3 -- 4 -- 5; }
+      { rank=same; 0; xcy; }
+      { rank=same; 1; xq; xx; xy; }
+      { rank=same; 2; wls; dqy; qbe; }
+      { rank=same; 3; nyy; mxy; }
+      { rank=same; 4; cs; hqm; xf; }
+      { rank=same; 5; lsy; }
+
+      edge [fontname="Simsun", color="red"];
+      nyy -- lsy [label=""];
+      zy -- cs [label=""];
+      zy -- dqy [label="水之躯"];
+      zy -- hqm [label=""];
+      zy -- mxy [label="凤凰眼"];
+      zy -- nyy [label="风之眷顾"];
+      zy -- qbe [label=""];
+      zy -- wls [label="凤凰纹章"];
+      zy -- xcy [label="玲珑心", style=bold, weight=100];
+      zy -- xf [label="女武神"];
+      zy -- xq [label="苍灵瞳", style=bold, weight=50];
+      zy -- xx [label="女舞神"];
+      zy -- xy [label="幽灵皇后"];
+  }
+
+#+end_src
+
+#+RESULTS:
+[[file:./assets/dot/rs_武异_美女来袭.svg]]
+
+** 维丽丝
+
+#+begin_quote
+接触新的环境，
+
+面对未知世界，
+
+大家或许都感到十分不安和迷惘，
+
+但不要紧，
+
+因为我们共同生活在这片夜空下，
+
+就像你的身边有我陪伴，
+
+我的身边也有你相随，
+
+所以不需要害怕任何事情。
+#+end_quote
+
+
+* ABORT 我被丧尸咬了                                    :小说:少女:贵妇:追更:
+
+- State "ABORT"      from              [2022-06-01 三 20:42] \\
+  要考试了，还有，读到700多章，闲得无聊了些。弃书！
+- State "PENDING"    from "TODO"       [2022-06-01 三 20:42]
+#+begin_src dot :file ./assets/dot/rs_寒夜孤灯一手撸_我被丧尸咬了.svg :cmdline -Tsvg
+  digraph relationship {
+
+      fontsize = 48;
+      fontcolor = violetred;
+      ranksep=.75;
+      label = "阶级金字塔";
+      node [shape=Mrecord, style=filled, color = darkviolet, fillcolor = lightpink1, fontcolor=webmaroon ];
+
+      # 非处 标好颜色
+      fontsize = 24;
+
+      dyt [label="<d> 后勤部|<n> 丁玉婷|<lv> 4"];
+      #gly [label="<d> |<n> 高凌烟|<lv> 3"];
+      #jfz [label="<d> 后勤部|<n> 金凤芝|<lv> 2"];
+      jps [label="<d> 安全部|<n> 蒋佩珊|<lv> 3"];
+      lqq [label="<d> 后勤部|<n> 刘倩倩|<lv> 3"];
+      #lsn [label="<d> 安全部|<n> 李胜男|<lv> 4"];
+      #pqz [label="<d> 安全部|<n> 潘青竹|<lv> 4"];
+      qs [label="<d> 后勤部|<n> 乔舒|<lv> 2"];
+      smy [label="<d> 热兵器|<n> 沈梦瑶|<lv> 4", style=filled, fillcolor=lightpink3 ];
+      #tml [label="<d> 安全部|<n> 田墨兰|<lv> 4"];
+      ty [label="<d> 总管\n后勤部|<n> 唐颖|<lv> 5"];
+      wq [label="<d> 医疗部|<n> 王蔷|<lv> 4"];
+      wqi [label="<d> 基建|<n> 王琪|<lv> 3"];
+      xyy [label="<d> 医疗部|<n> 夏媛媛|<lv> 3"];
+      yxh [label="<d> 运输部|<n> 杨晓红 |<lv> 4"];
+      zc [label="<d> |<n> 张诚|<lv> 6", shape=record, style="filled", fillcolor = gold, fontcolor=indigo ];
+
+      aqb [ label="<d> 安全部|{<lsn> 李胜男|<pqz> 潘青竹|<tml> 田墨兰|<gly> 高凌烟} |<lv> 4", style="filled", fillcolor = forestgreen, fontcolor=honeydew ];
+
+      {
+          node [shape=plaintext; fontsize=24, style=filled, fillcolor=white ];
+          LV -> 6 [ style=invis; ];
+          edge [arrowhead=tee;];
+          6 -> 5 -> 4 -> 3 -> 2 -> 1; }
+      { rank=same; 6; zc; }
+      { rank=same; 5; ty; }
+      { rank=same; 4; smy; yxh; wq; dyt; aqb }
+      { rank=same; 3; lqq; jps; xyy; wqi; }
+      { rank=same; 2; qs; }
+
+      "zc":n -> "ty":n[weight=40, style=bold, color=red, arrowhead=curve ];
+      "zc":n -> "smy":n [weight=30, style=dotted, arrowhead=curve, color=lightpink4 ];
+
+      edge [ arrowhead=vee ];
+      "ty":n -> "yxh":n [weight=20];
+      "ty":lv -> "wq":lv;
+      ty:lv -> wqi:lv;
+      ty:d -> dyt:d;
+
+      ty:lv -> aqb:lv;
+      aqb:d -> jps:d;
+
+      wq:d -> xyy:d;
+      dyt:d -> lqq:d;
+
+      lqq:d -> qs:d;
+
+
+  }
+
+#+END_SRC
+
+#+RESULTS:
+[[file:./assets/dot/rs_寒夜孤灯一手撸_我被丧尸咬了.svg]]
+
+* DONE 红楼梦
+
+- State "Done"       from "TODO"       [2022-05-10 二 20:55]
+- State "TODO"       from "PENDING"    [2022-05-10 二 20:55]
+- State "PENDING"    from              [2022-05-10 二 20:55]
+#+begin_src dot :file ./assets/dot/rs_曹雪芹_红楼梦.svg :cmdline -Tsvg
+
+  digraph relationship{
+      rankdir = LR;
+      ranksep = .75;
+      node [ shape=Mrecord; style=filled; fillcolor=white; ];
+      {
+          node [ shape = plaintext; style=filled; fillcolor=white; ];
+          贾族 -> 1;
+          1 -> 2 -> 3 -> 4 -> 5;
+      }
+
+      jby [label="<s> |<n> 贾宝玉|<d> "];
+      jc [label="<s> |<n> 贾琮|<d> "];
+      jdh [label="<s> |<n> 贾代化|<d> "];
+      jds [label="<s> 荣国公| { <n> 贾代善|<jm> 贾母 }|<d> "];
+      jf [label="<s> |<n> 贾敷|<d> "];
+      jh [label="<s> |<n> 贾环|<d> "];
+      jj [label="<s> |<n> 贾敬|<d> "];
+      jl [label="<s> |{ <n> 贾琏|<wxf> 王熙凤 }|<d> "];
+      jlan [label="<s> |<n> 贾兰|<d> "];
+      jm [label="<s> |<n> 贾敏|<d> "];
+      jq [label="<s> |<n> 贾蔷|<d> "];
+      jqj [label="<s> |<n> 贾巧姐|<d> "];
+      jr [label="<s> |{ <n> 贾蓉|<qkq> 秦可卿}|<d> "];
+      js [label="<s> |<n> 贾赦|<d> "];
+      jtc [label="<s> |<n> 贾探春|<d> "];
+      jxc [label="<s> |<n> 贾惜春|<d> "];
+      jy [label="<s> 宁国公|<n> 贾演|<d> "];
+      jyc [label="<s> |<n> 贾迎春|<d> "];
+      jyc1 [label="<s> |<n> 贾元春|<d> "];
+      jyuan [label="<s> 荣国公|<n> 贾源|<d> "];
+      jz [label="<s> |<n> 贾珍|<d> "];
+      jzheng [label="<s> |<n> 贾政|<d> "];
+      jzhu [label="<s> |{ <n> 贾珠|<ly> 李纨 }|<d> "];
+
+      ldy [label="<s> |<n> 林黛玉|<d> "];
+
+      { rank=same; 1; jy; jyuan; }
+      { rank=same; 2; jdh; jds; }
+      { rank=same; 3; jf; jj; js;jzheng; jm; }
+      { rank=same; 4; jz; jxc; jl; jyc; jyc1; jc; jzhu; jby; jh; jtc; ldy; }
+      { rank=same; 5; jr; jq; jlan; jqj; }
+
+      ####### 宁国府 #########
+      jy:s -> jdh:n;
+
+      jdh:s -> jf:n;
+      jdh:s -> jj:n;
+
+      jj:s -> jz:n;
+      jj:d -> jxc:n;
+
+      jz:s -> jr:n;
+      jz:s -> jr:qkq [ style=dotted; color=grey; ];
+
+      ######### 荣国府 #############
+      jyuan:s -> jds:n;
+
+      jds:s -> js:n;
+      jds:s -> jzheng:n; # [ weight=20; ];
+      jds:d -> jm:n;
+
+      js:s -> jl:n;
+      js:s -> jc:n;
+      js:d -> jyc:n;
+      jzheng:s -> jzhu:n;
+      jzheng:s -> jby:n;# [ weight=30; ];
+      jzheng:s -> jh:n;
+      jzheng:d -> jyc1:n;
+      jzheng:d -> jtc:n;
+      jm:d -> ldy:n;
+
+      jl:d -> jqj:n;
+      jzhu:s -> jlan:n;
+
+
+  }
+#+end_src
+
+#+RESULTS:
+[[file:./assets/dot/rs_曹雪芹_红楼梦.svg]]
+
+
+* 《孙子兵法》
+
+** 谋攻篇
+
+故知胜有五：知可以战与不可以战者胜，识众寡之用者胜， =上下同欲者胜= ，以虞待不虞者胜，将能而君不御者胜。[fn:4]
+
+预知取胜的因素有五点：
+
+1) 懂得什么条件下可战或不可战，能取胜；
+   
+2) 懂得兵多兵少不同用法的，能取胜；
+
+3) 全军上下一心的，能取胜；
+
+4) 以有备之师待无备之师的，能取胜；
+
+5) 将帅有才干而君主不干预指挥的，能取胜。
+
+这五条是预知胜利的道理。
+
+
+* 《中庸》
+
+凡事豫则立，不豫则废。言前定则不跲(jiá)，事前定则不困，行前定则不疚，道前定则不穷。[fn:5]
+
+任何事情，事先有 =准备= 就容易成功，事先没准备就容易失败。
+
+- 说话事先想好就不会 =语塞= ，
+
+- 做事事先想好就不会感到困难。
+
+- 行动之前事先想好就不会内心不安，
+
+- =法则= 事先想好就不会陷入绝境。
+
+
+* 二十四史
+
+** 《后汉书》 范晔
+
+*** 班固
+
+《汉书》
+
+*** 班超列传
+
+投笔从戎
+
+#+begin_quote
+
+久劳苦，尝辍业投笔叹曰：“大丈夫无它志略，犹当效傅介子、张骞立功异域，以取封侯，安能久事笔研间乎？”
+
+#+end_quote
+
+* 毛泽东
+
++ ~不管风吹浪打，胜似闲庭信步。~[fn:6]
+
+  @@comment:自信 每临大事有静气@@
+
++ ~为有牺牲多壮志，敢叫日月换新天。喜看稻菽(shū)千重浪，遍地英雄下夕烟。~[fn:7]
+
+  为有：因为有。多：增强激励。敢教：能令、能使。
+
+  新中国的农民从黄昏时的炊烟和暮霭中归来。
+
++ ~敢同恶鬼争高下，不向霸王让寸分。先烈回眸应笑慰，擎旗自有 =后来人= 。~[fn:8]
+
+  敢同那恶鬼一决高下，对于强敌寸分不让，战斗到底。
+
++ ~多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。~[fn:9]
+
+  多少人世间的事都是急忙忙地匆匆而过，天地不断旋转，光阴紧迫。要等一万年后才等来胜利，实在是太久，我们要抓紧时间，力求主动，只争朝夕。
+
+  @@comment:记得大话西游中有引用。至尊宝对紫霞说，一万年太久，只争朝夕。@@
+
+* DONE Lady                                                            :贵妇:
+
+- State "Done"       from "TODO"       [2022-05-10 二 20:55]
+- State "TODO"       from "PENDING"    [2022-05-10 二 20:55]
+- State "PENDING"    from              [2022-05-10 二 20:55]
+
+
+Eg.
+
++ 贵妇列表
+
+  1) 雪之下夫人
+
+  2) 裴南曼
+
+  3) 尹清诺
+  
+** 蜜桃臀
+
+
+
+#+CAPTION: 贵妇
+#+ATTR_HTML: :bolder 0 :rules all :frame bolder
+#+startup: shrink
+| Tags |                                                                                                                                             1 | 2                                                                                                                                         |
+|      |                                                                                                                                        <r200> | <l40>                                                                                                                                     |
+|------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------|
+| 贵妇 | {{{sized-image(file:./assets/719739-1200x1800-azur-lane-monarch-azur-lane-monarch-black-qipao-azur-lane-mendou-kusai-sin.png,黑丝旗袍贵妇)}}} | {{{sized-image(file:./assets/747911-3500x3642-eiyuu-densetsu-elaine-auclair-lohel-single-long-hair-tall-image.jpeg,西方扶墙贵族女公爵)}}} |
+| 靓臀   |  {{{sized-image(file:./assets/743459-3406x5848-genshin-impact-yae-miko-omone-hokoma-agm-single-long-hair-tall-image.jpeg,高贵端庄贵妇背影)}}} | {{{sized-image(file:./assets/712641-3869x2527-original-yashiki-yuuko-infinote-single-looking-at-viewer-short-hair.png,丝绸内裤教师)}}}    |
+
+
+* Simcity
+
+#+begin_src dot :file ./assets/dot/rs_simcity.svg :cmdline -Tsvg
+  digraph relationship {
+      fontsize = 48;
+      rankdir=LR;
+      fontcolor = violetred;
+      ranksep=.75;
+      label = "生产流动";
+      node [shape=Mrecord, style=filled, color = darkviolet, fillcolor = lightpink1, fontcolor=webmaroon ];
+      # 非处 标好颜色
+      fontsize = 24;
+      ## ------------------------ 店铺 ------------------------------
+      ######  高科技工厂
+      ######  建材店
+      ######  五金店
+      ######  园艺店
+      ######  农贸市场
+      ######  甜品店
+      #### 原材料 ####
+      bl [label="<t> 300|<n> 玻璃|<v> "];
+      c [label="<t> 30|<n> 草|<v> "];
+      canz [label="<t> 27|<n> 铲子|<v> "];
+      cj [label="<t> 40.5|<n> 厨具|<v> "];
+      cz [label="<t> 12.6|<n> 锤子|<v> "];
+      dwsl [label="<t> 360|<n> 动物饲料|<v> "];
+      dz [label="<t> 4.5|<n> 钉子|<v> "];
+      dzmf [label="<t> 27|<n> 袋装面粉|<v> "];
+      dzyj [label="<t> |<n> 电子元件|<v> "];
+      fzp [label="<t> 180|<n> 纺织品|<v> "];
+    
+      hk [label="<t> |<n> 火坑|<v> "];
+      hmb [label="<t> 27|<n> 厚木板|<v> "];
+      hxwz [label="<t> 120|<n> 化学物质|<v> "];
+      jc [label="<t> 18|<n> 卷尺|<v> "];
+      jiaos [label="<t> 54|<n> 胶水|<v> "];
+      js [label="<t> 1|<n> 金属|<v> 10"];
+      jyfzp [label="<t> |<n> 家用纺织品|<v> "];
+      lsbs [label="<t> 30|<n> 绿色冰沙|<v> "];
+      kwz [label="<t> 30|<n> 矿物质|<v> "];
+      mbj [label="<t> 60|<n> 面包卷|<v> "];
+      mc [label="<t> 3|<n> 木材|<v> 20"];
+      mz [label="<t> 60|<n> 帽子|<v> "];
+      nl [label="<t> |<n> 奶酪|<v> "];
+      ny [label="<t> 67|<n> 奶油|<v> "];
+    
+      sb [label="<t> 90|<n> 手表|<v> "];
+      sc [label="<t> 18|<n> 蔬菜|<v> "];
+      sghjg [label="<t> 81|<n> 水果和浆果|<v> "];
+      sl [label="<t> 9|<n> 塑料|<v> "];
+      sm [label="<t> 90|<n> 树苗|<v> "];
+      sn [label="<t> 45|<n> 水泥|<v> "];
+      thxl [label="<t> 240|<n> 糖和香料|<v> "];
+      ttq [label="<t> 45|<n> 甜甜圈|<v> "];
+      tyjj [label="<t> 135|<n> 庭院家具|<v> "];
+      tz [label="<t> 4.5|<n> 梯子|<v> "];
+    
+      xiz [label="<t> |<n> 西装|<v> "]
+      xz [label="<t> 75|<n> 鞋子|<v> "];
+      ym [label="<t> 54|<n> 玉米|<v> "];
+      yq [label="<t> 54|<n> 油漆|<v> "];
+      ytzsdg [label="<t> |<n> 樱桃芝士蛋糕|<v> "];
+      yz [label="<t> 18|<n> 椅子|<v> "];
+      zj [label="<t> |<n> 钻机|<v> "];
+      zk [label="<t> 18|<n> 砖块|<v> "];
+      zhuoz [label="<t> 27|<n> 桌子|<v> "];
+      zz [label="<t> 20|<n> 种子|<v> "];
+      #### 原材料 #### end
+
+      #### 排序 ####
+      {
+          node [shape=plaintext; fontsize=24, style=filled, fillcolor=white ];
+          LV -> 1 [ style=invis; ];
+          edge [arrowhead=tee;];
+          1 -> 2 -> 3 -> 4 -> 5 -> 6; }
+      { rank=same; 1; js; mc; sl; zz; kwz; hxwz; fzp; thxl; bl; dwsl }
+      { rank=same; 2; canz; cj; cz; dz; dzmf; hmb; jiaos; jc; ny; sb; sc; sn; ym; yq; zk }
+      { rank=same; 3; c; mbj; mz; sm; ttq; tyjj; tz; xz; yz; zhuoz }
+      { rank=same; 4; sghjg }
+      { rank=same; 5; lsbs }
+      #### 排序 #### end
+
+      #### 过程 #### 
+      ###  一级材料  ###
+      bl:n -> { sb:n } [label=1];
+      dwsl:n -> ny:n [label=1];
+      fzp:n -> { tyjj:n; dzmf:n; mz:n; xz:n; sb:n } [label=2, weight=20];
+      hxwz:n -> { sn:n; sb:n } [label=1];
+      hxwz:n -> { jiaos:n; yq:n } [label=2, weight=20];
+      js:n -> { cz:n; jc:n; canz:n } [label=1];
+      js:n -> { dz:n; yq:n; cj:n; tz:n } [label=2, weight=20];
+      kwz:n -> { yq:n; ym:n } [label=1];
+      kwz:n -> { zk:n; sn:n } [label=2, weight =20];
+      #kwz:n -> sn:n [label=2];
+      mc:n -> { cz:n; canz:n } [label=1];
+      mc:n -> {hmb:n; cj:n; yz:n } [label=2, weight=20];
+      sl:n -> { jiaos:n; jc:n; canz:n; cj:n; tyjj:n; xz:n } [label=1];
+      thxl:n -> { ttq:n } [label=1];
+      zz:n -> { c:n } [label=1];
+      zz:n -> { sm:n; sc:n; dzmf:n; sghjg:n } [label=2, weight=20];
+      zz:n -> { ym:n } [label=4, weight=40];
+      ##  二级材料  ###
+      canz:n -> { c:n; sm:n } [label=1];
+      cz:n -> { yz:n; zhuoz:n } [label=1];
+      dz:n -> { yz:n } [label=1];
+      dz:n -> { zhuoz:n } [label=2, weight=20];
+      dzmf:n -> { ttq:n } [label=1];
+      dzmf:n -> { mbj:n } [label=2, weight=20];
+      hmb:n -> { tz:n; tyjj:n; zhuoz:n } [label=2, weight=20];
+      jc:n -> { mz:n } [label=1];
+      jiaos:n -> { xz:n } [label=1];
+      ny:n -> { mbj:n } [label=1];
+      sc:n -> { lsbs:n } [label=1];
+      ##  三级材料  ###
+      sm:n -> { sghjg:n } [label=1];
+      ##  四级材料  ###
+      sghjg:n -> { lsbs:n } [label=1];
+      #### 过程 #### end
+   
+  }
+#+end_src
+
+#+RESULTS:
+[[file:./assets/dot/rs_simcity.svg]]
+
+
+
+* PENDING 辩证法唯物论讲授提纲
+- State "PENDING"    from              [2022-05-22 日 12:17]
+refer to [[https://www.marxists.org/chinese/maozedong/1968/1-090.htm][辩证法唯物论讲授提纲]]
+
+
+在命运的拳头痛击下头破血流但仍不回头。
+
+意识形态工作是为国家立心，为民族立魂的工作。
+
+
+* 诛仙
++ 作者
+  萧鼎
+** 陆雪琪
+
+动漫
+#+begin_quote
+别怕，很快就会过去的。
+
+我会在这里陪你的。
+
+你救我护我，不惜自己的生命。
+
+我便一般对你了。
+
+你心中苦楚，天知我知。
+
+我不能分担你的痛楚，便与你一道承担。
+
+总希望有一日，你能与心中爱人，欢欢喜喜在一起的。
+#+end_quote
+
+* Footnotes
+
+[fn:9]小小寰球，有几个苍蝇碰壁。嗡嗡叫，几声凄厉，几声抽泣。蚂蚁缘槐夸大国，蚍蜉撼树谈何易。正西风落叶下长安，飞鸣镝(dí)。多少事，从来急；天地转，光阴迫。 *一万年太久，只争朝夕。* 四海翻腾云水怒，五洲震荡风雷激。要扫除一切害人虫，全无敌。 —— 毛泽东 《满江红·和郭沫若同志》
+
+[fn:8]长空又放红核云，怒吼挥拳显巨身。横目南天震虎口，寄心北海跃龙门。 *敢同恶鬼争高下，不向霸王让寸分。* 先烈回眸应笑慰，擎旗自有后来人。 —— 毛泽东 《七律·庆祝第二次核试验成功》
+
+[fn:7]别梦依稀咒逝川，故园三十二年前。红旗卷起农奴戟，黑手高悬霸主鞭。 *为有牺牲多壮志，敢叫日月换新天。喜看稻菽千重浪，遍地英雄下夕烟。* —— 毛泽东 《七律·到韶山》
+
+[fn:6]才饮长沙水，又食武昌鱼。万里长江横渡，极目楚天舒。 *不管风吹浪打，胜似闲庭信步* ，今日得宽馀。子在川上曰：逝者如斯夫！风樯动，龟蛇静，起宏图。一桥飞架南北， *天堑变通途* 。更立西江石壁，截断巫山云雨，高峡出平湖。神女应无恙，当惊世界殊。 —— 毛泽东 《水调歌头·游泳》
+
+[fn:5]凡事豫则立，不豫则废。言前定则不跲(jiá)，事前定则不困，行前定则不疚，道前定则不穷。 
+
+[fn:4]故知胜有五：知可以战与不可以战者胜，识众寡之用者胜， *上下同欲者胜* ，以虞待不虞者胜，将能而君不御者胜。此五者，知胜之道也。 —— 《孙子兵法》 
+
+[fn:3]灵台无计逃神矢，风雨如磐暗故园。寄意寒星荃不察，我以我血荐轩辕。 —— 鲁迅 《自题小像》
+
+[fn:2]千万不要被事物的表面现象所迷惑。 现在的平静，只是暴风雨来临的前奏。
+
+[fn:1]当人们失去危机感的时候，就是离死亡不远了。@@comment: 生于忧患，死于安乐。@@
+
+
